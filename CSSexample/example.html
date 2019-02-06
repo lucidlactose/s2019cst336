@@ -6,25 +6,71 @@
             .page, header, .middle, .left, section, article, aside, footer {
                 display : inline;
             }
+            header img {
+                height: 50px;
+                border: 1px solid black;
+                display: block;
+            }
+            button img {
+                height: 10px;
+            }
+            main, content, article {
+                display: block;
+            }
+            article {
+                margin-right: 20%;
+            }
+            section {
+                position: relative;
+            }
+            section button {
+                position: absolute;
+                right: 20px;
+                bottom: 20px;
+            }
         </style>
     </head>
     
     <body>
         <div class = "page">
             <header>    
-                header
+                <img src = "img/support.jpg">
             </header>
             
-            <div class = "middle">
-                <div class="left">
-                    <section>top</section>
-                    <article>bot</article>
-                </div>
-                <aside>right</aside>
-            </div>
+            <content>
+                <section class = "middle">
+                    <search class="left">
+                        <input type="textarea" name=""/>
+                        <button> <img src= "img/search.png"></button>
+                        
+                    </search>
+                    <article>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                         Nam justo massa, blandit vitae tristique in, sagittis commodo mauris. 
+                         Donec volutpat suscipit eros, vel sollicitudin est. 
+                         Proin ac nulla venenatis augue dignissim pharetra nec in nisi. 
+                         Pellentesque auctor dictum lorem at faucibus. 
+                         Nulla dignissim massa ut mi luctus, quis tincidunt nisi egestas. 
+                         Mauris non placerat felis, sed ultrices felis. Suspendisse potenti. 
+                         Fusce at tincidunt nibh. In semper pharetra elit at ornare. 
+                         Nulla tincidunt auctor purus.
+
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras nec tempus diam. 
+                        Pellentesque nec porta lectus, sit amet rhoncus ante. Phasellus vitae risus mi. 
+                        Maecenas odio nulla, luctus volutpat eros et, faucibus gravida diam. 
+                        Donec lobortis tempor fermentum. Duis magna urna, malesuada viverra sem quis, eleifend eleifend eros. 
+                        Proin tempor justo sem, malesuada dignissim risus rhoncus eget.
+                        Maecenas porta, nisl vel gravida placerat, ligula mi fringilla lacus, ut fringilla metus justo non leo. 
+                        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                        Nullam tincidunt elementum diam a porttitor. 
+                        Ut augue leo, vestibulum at ante molestie, dictum suscipit mauris. 
+                    </article>
+                    <button> <img src= "img/help.png"></button>
+                </section>
+            </content>
             
             <footer>
-                footer
+                2019 @ lucid
             </footer>
         </div>
 
