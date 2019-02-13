@@ -18,34 +18,54 @@ $("document").ready ( function() {
     
     function checkGuess() {
         var userGuess = Number(guessField.value);
+        
         if (guessCount == 1) {
             guesses.innerHTML = "Previous guesses: ";
         }
+        
+        // make sure that it is a number
         if(isNaN(userGuess)) {
             $("#lastResult").html("That was not a number, please try again.");
             $("#lowOrHi").html("Invalid input");
             guessCount--;
+        
+            
         } else {
             guesses.innerHTML += userGuess + " ";
             
+            // if the number is too big
              if (userGuess > 99) {
                  $("#lastResult").html("That number was far too high and does not count!");
                  guessCount--;
-             } else if (userGuess === randomNumber) {
+             } 
+             
+             // if they guess the right  number
+             else if (userGuess === randomNumber) {
                  $("#lastResult").html("Congratulations! You got it right!");
                  $("#lastResult").css( "backgroundColor", "green");
                  winField.innerHTML = "Wins: " + gamesWon + " ";
+                 $("#wins").css("backgroundColor", "green");
+                 $("#losses").css("display", "block");
+                                  lossField.innerHTML = "Loss: " + gamesLost + " ";
+                 $
+                 
                  lowOrHi.innerHTML = "";
                  gamesWon++;
                  setGameOver();
+                 
+             // if they run out of guesses
              } else if (guessCount === 7) {
                  $("#lastResult").html("Sorry, you lost!");
+                 $("#losses").css("backgroundColor", "red");
                  lossField.innerHTML = "Loss: " + gamesLost + " ";
                  gamesLost++;
                  setGameOver();
+                 
+             // if it is a wrong guess
              } else {
                  $("#lastResult").html("Wrong!");
                  $("#lastResult").css("backgroundColor", "red");
+                 
                  if (userGuess < randomNumber) {
                      $("#lowOrHi").html("Last guess was too low!");
                  } else if (userGuess > randomNumber) {
