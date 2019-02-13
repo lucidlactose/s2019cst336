@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript">
+            function printContact(contact) {
+                var contactList = document.getElementById("contact-list");
+                
+                //<li class="list-group-item">
+                var contactListItem = document.createElement("li");
+                contactListItem.setAttribute("class", "list-group-item");
+                contactList.appendChild(contactListItem);
+                
+                //    <div class="row w-100">
+                var rowDiv = document.createElement("div");
+                rowDiv.setAttribute("class", "row w-100");
+                contactListItem.appendChild(rowDiv);
+                
+                //        <div class="col-12 col-sm-6 col-md-3 px-0">
+                var pictureColumnDiv = document.createElement("div");
+                pictureColumnDiv.setAttribute("class", "col-12 col-sm-6 col-md-3 px-0");
+                rowDiv.appendChild(pictureColumnDiv);
+                
+                //            <img src="http://demos.themes.guide/bodeo/assets/images/users/m101.jpg" alt="Mike Anamendolla" class="rounded-circle mx-auto d-block img-fluid">
+                var pictureImage = document.createElement("img");
+                pictureImage.setAttribute("class", "rounded-circle mx-auto d-block img-fluid");
+                pictureImage.setAttribute("alt", "Mike Anamendolla");
+                pictureImage.setAttribute("src", "http://demos.thems.guide/bodeo/assets/images/users/m101.jpg");
+                pictureColumnDiv.appendChild(pictureImage);
+
+                //        <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                var infoColumnTab = document.createElement("div");
+                infoColumnTab.setAttribute("class", "col-12 col-sm-6 col-md-9 text-center text-sm-left")
+                infoColumnTab.setAttribute()
+                rowDiv.appendChild(infoColumnTab);
+                
+                //            <span class="fa fa-mobile fa-2x text-success float-right pulse" title="online now"></span>
+                var presenceSpan = document.createElement("span");
+                presenceSpan.setAttribute("class", "fa fa-mobile fa-2x text-success float-right pulse");
+                presenceSpan.setAttribute("title", "online now");
+                
+                //            <label class="name lead">Mike Anamendolla</label>
+                var nameLabel = document.createElement("label");
+                nameLabel.setAttribute("class", "name lead");
+                nameLabel.innerHTML("Mike Anamendolla");
+                infoColumnTab.appendChild(nameLabel);
+                
+                //            <br>
+                var nameLineBreak = document.createElement("br");
+                infoColumnTab.appendChild(nameLineBreak);
+                
+                //            <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5842 Hillcrest Rd"></span>
+                var addressActionSpan = document.createElement("span");
+                addressActionSpan.setAttribute("class", "fa fa-map-marker fa-fw text-muted");
+                addressActionSpan.setAttribute("data-toggle", "tooltip");
+                addressActionSpan.setAttribute("title", "");
+                addressActionSpan.setAttribute("data-orginal-title", "5842 Hillcrest Rd");
+                infoColumnTab.appendChild(addressActionSpan);
+                
+                //            <span class="text-muted">5842 Hillcrest Rd</span>
+                var addressSpan = document.createElement("span");
+                addressSpan.setAttribute("class")
+                
+                //            <br>
+                //            <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(870) 288-4149"></span>
+                //            <span class="text-muted small">(870) 288-4149</span>
+                //            <br>
+                //            <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" data-original-title="" title=""></span>
+                //            <span class="text-muted small text-truncate">mike.ana@example.com</span>
+                //        </div>
+                //    </div>
+                //</li>
+            }
+        </script>
+         <title>Contact List</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="contact-list.css">
+    </head>
+    
+    <body>
+        div class="container">
+        <div class="card card-default" id="card_contacts">
+            <div id="contacts" class="panel-collapse collapse show" aria-expanded="true" style="">
+                <ul class="list-group pull-down" id="contact-list">
+                    <li class="list-group-item">
+                        <div class="row w-100">
+                            <div class="col-12 col-sm-6 col-md-3 px-0">
+                                <img src="http://demos.themes.guide/bodeo/assets/images/users/m101.jpg" alt="Mike Anamendolla" class="rounded-circle mx-auto d-block img-fluid">
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-9 text-center text-sm-left">
+                                <span class="fa fa-mobile fa-2x text-success float-right pulse" title="online now"></span>
+                                <label class="name lead">Mike Anamendolla</label>
+                                <br>
+                                <span class="fa fa-map-marker fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="5842 Hillcrest Rd"></span>
+                                <span class="text-muted">5842 Hillcrest Rd</span>
+                                <br>
+                                <span class="fa fa-phone fa-fw text-muted" data-toggle="tooltip" title="" data-original-title="(870) 288-4149"></span>
+                                <span class="text-muted small">(870) 288-4149</span>
+                                <br>
+                                <span class="fa fa-envelope fa-fw text-muted" data-toggle="tooltip" data-original-title="" title=""></span>
+                                <span class="text-muted small text-truncate">mike.ana@example.com</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+    </body>
+</html>
