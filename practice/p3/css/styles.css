@@ -1,0 +1,39 @@
+html {
+    overflow-x: hidden;
+}
+header {
+    background: silver;
+    margin: -.5rem -.5rem 0 -.5rem;
+    text-align: center;
+    overflow-x: hidden;
+}
+play {
+    padding-top:1%;
+    display: flex;
+    justify-content: center;
+}
+input {
+    background-color:green;
+    color:white;
+    font-size: 50px;
+}
+images {
+    display: flex; 
+    justify-content: center;
+}
+text {
+    text-align: center;
+}
+#jackpot {
+    display: none;
+}
+#win1 {
+    display: none;
+}
+#win2 {
+    display: none;
+}
+win {
+    display: none;
+}
+

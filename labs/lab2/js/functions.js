@@ -22,7 +22,7 @@ $("document").ready ( function() {
         if (guessCount == 1) {
             guesses.innerHTML = "Previous guesses: ";
         }
-        
+        console.log("TEST");
         // make sure that it is a number
         if(isNaN(userGuess)) {
             $("#lastResult").html("That was not a number, please try again.");
@@ -47,7 +47,7 @@ $("document").ready ( function() {
                  $("#wins").css("backgroundColor", "green");
                  $("#losses").css("display", "block");
                                   lossField.innerHTML = "Loss: " + gamesLost + " ";
-                 $
+                 
                  
                  lowOrHi.innerHTML = "";
                  gamesWon++;

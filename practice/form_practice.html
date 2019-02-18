@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        <div>
+            </div>
+            <div id="input-group">
+                <label for="feedback"> Guess the baby name </label>
+                <div>
+                    <input type="radio" id="item1" name="degreeChoices" value="1">
+                    <label for="item1"> Red Ranger </label>    
+                </div>
+                <div>
+                    <input type="radio" id="item2" name="degreeChoices" value="2">
+                    <label for="item2"> Blue Doctor </label>
+                </div>
+                <div>
+                    <input type="radio" id="item3" name="degreeChoices" value="3">
+                    <label for="item3"> Green Knight </label>
+                </div>
+                <div>
+                    <input type="radio" id="item4" name="degreeChoices" value="4">
+                    <label for="item4"> Yellow Cleric </label>
+                </div>
+                <div>
+                    <input type="radio" id="item5" name="degreeChoices" value="5">
+                    <label for="item5"> Black Warlock </label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <button class="checker" type="button" value="Submit Data"> something </button>
+            </div>
+        </div>
+        
+        <!--Whether it was a correct guess or not-->
+        <div id="result">
+            
+        </div>
+
+        <script
+			  src="https://code.jquery.com/jquery-3.3.1.min.js"
+			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			  crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $("document").ready ( function() {
+                var correctAnswer = "2";
+               
+                
+                // it does not matter what goes in the function and an "e" is the defualt
+                $("button.checker").on("click",function(e) {
+                     var selectedRadio = $("input[name='degreeChoices']:checked");
+                var selectedNameValue = selectedRadio.val();
+                var selectedRadioId = selectedRadio.attr("id");
+                var selectedLabelHtml = $("label[for='" + selectedRadioId + "']").html();
+                   // Don't need e.preventDefault() because of button and type="button"
+
+                   if (selectedNameValue === correctAnswer) {
+                        $("#result").html(selectedLabelHtml + " is correct");
+                        console.log("correct");
+                   } else {
+                        console.log(selectedLabelHtml);
+                       $("#result").html(selectedLabelHtml + " is wrong");
+                   }
+                });
+            })
+            </script>
+
+    </body>
+</html>
