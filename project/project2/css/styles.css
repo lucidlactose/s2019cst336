@@ -1,21 +1,27 @@
 .centered {
     background: #eee;
     width: 80%;
-    margin: 1rem auto -1rem auto;
+    margin: 1.5rem auto 0rem auto;
+    padding: 8.2rem 0;
+    height: auto;
 }
-#label-question {
-    background: pink;
-    padding: 0 6%;
-    border: 2px solid black;
-    width:100%;
+#start {
+    text-align: center;
 }
-#submit-button {
-    margin-top: 1%;
+#start-button {
+    background-color: #44BB55;
+    color: white;
+    padding: 18px 30px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2.4% auto;
+    cursor: pointer;
 }
 html {
     overflow-x: hidden;
     background: rgb(239, 239, 239, .5);
     margin: 0 -.5rem 0 -.5rem;
+    height: 0px;
 }
 
 body {
@@ -54,10 +60,32 @@ intro p{
     padding-top: 1%;
 }
 gl {
+    text-align: center;
     display: block;
     font-weight: bold;
+    font-size: 1.5em;
     margin: 2% auto 1% auto;
     width: 90%;
+}
+footer {
+    display: block;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+
+
+
+
+#label-question {
+    background: pink;
+    padding: 0 6%;
+    border: 2px solid black;
+    width:100%;
+}
+#submit-button {
+    margin-top: 1%;
 }
 form {
     margin-left: 10%;
@@ -76,10 +104,4 @@ question img {
 
 question, ans1, ans2, ans3, ans4 {
     display: block;
-}
-footer {
-    display: block;
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
 }

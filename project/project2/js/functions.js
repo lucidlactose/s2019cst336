@@ -120,9 +120,9 @@ $("document").ready( function() {
         $("finale")
             .css("display", "block");
         $("finale h2")
-            .html("Total: " + (total/6).toFixed(2) * 100 + "%");
+            .html("Total: " + Math.floor(total/6) * 100 + "%");
         
-        if (total >= 5) {
+        if (total === 6) {
             $("finale h2")
                 .css("color", "green")
                 .css("background", "lime");
