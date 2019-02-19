@@ -1,39 +1,63 @@
 .centered {
+    background: #eee;
     width: 80%;
-    margin: 0 auto;
+    margin: 1rem auto -1rem auto;
 }
 #label-question {
     background: pink;
-    padding: 0 5%;
-    border: 1px solid black;
+    padding: 0 6%;
+    border: 2px solid black;
     width:100%;
-} 
+}
+#submit-button {
+    margin-top: 1%;
+}
 html {
   overflow-x: hidden;
-  background: #efefef;
+  background: rgb(239,239,239, .5);
+  margin: 0 -.5rem 0 -.5rem;
+}
+
+body {
+    background: rgb(86,36,55, .5);
 }
 
 header {
     margin: -.5rem -9999rem 0 -9999rem;
     padding: 0 9999rem;
-    background: #5688FF;
+    background: rgb(86,136,255);
     overflow-x: hidden;
     width: 100%;
 }
+finale {
+    display: none;
+    text-align: center;
+    font-size: 2em;
+    overflow-x: hidden;
+    width: 80%;
+    margin: 1rem auto 0 auto;
+    background: #eee;
+}
+
 h1 {
     display: block;
     text-align: center;
 }
 hr {
-    width: 80%;
+    width: 90%;
     border: 2px solid navy;
 }
 
+intro p{
+    width:90%;
+    margin: auto;
+    padding-top: 1%;
+}
 gl {
     display: block;
     font-weight: bold;
-    margin-top: 2%;
-    margin-bottom: 1%
+    margin: 2% auto 1% auto;
+    width: 90%;
 }
 form {
     margin-left: 10%;
@@ -42,11 +66,13 @@ form {
 question {
     padding-top: 1%;
     padding-bottom: 1%;
-    border: 1px solid black;
+    border: 2px solid black;
 }
-question:before {
-    background:black;
+question img {
+    padding-left: 1rem;
+    width: 1rem;
 }
+
 question, ans1, ans2, ans3, ans4 {
     display: block;
 }
@@ -54,4 +80,5 @@ footer {
     display: block;
     text-align: center;
     padding-top: 1%;
+    padding-bottom: 1%;
 }
