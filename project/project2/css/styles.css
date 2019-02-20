@@ -1,9 +1,33 @@
-.centered {
-    background: #eee;
+
+html {
+    overflow-x: hidden;
+    margin: 0 -.5rem 0 -.5rem;
+    height: 0px;
+}
+body {
+    background: rgb(86,36,55, .5);
+}
+hr {
+    width: 70%;
+    border: 2px solid navy;
+}
+footer {
+    background: #e0e0e0;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
     width: 80%;
-    margin: 1.5rem auto 0rem auto;
+    margin: 1rem auto -1rem auto;
+}
+
+
+
+#centered {
+    background: #e0e0e0;
+    width: 80%;
+    margin: 1rem auto 1rem auto;
     padding: 8.2rem 0;
-    height: auto;
+    height: 100%;
 }
 #start {
     text-align: center;
@@ -12,22 +36,11 @@
     background-color: #44BB55;
     color: white;
     padding: 18px 30px;
-    display: inline-block;
+    border-radius: 50px;
     font-size: 16px;
     margin: 2.4% auto;
     cursor: pointer;
 }
-html {
-    overflow-x: hidden;
-    background: rgb(239, 239, 239, .5);
-    margin: 0 -.5rem 0 -.5rem;
-    height: 0px;
-}
-
-body {
-    background: rgb(86,36,55, .5);
-}
-
 header {
     margin: -.5rem -9999rem 0 -9999rem;
     padding: 0 9999rem;
@@ -35,28 +48,13 @@ header {
     overflow-x: hidden;
     width: 100%;
 }
-finale {
-    display: none;
-    text-align: center;
-    font-size: 2em;
-    overflow-x: hidden;
-    width: 80%;
-    margin: 1rem auto 0 auto;
-    background: #eee;
-}
-
 h1 {
     display: block;
     text-align: center;
 }
-hr {
-    width: 90%;
-    border: 2px solid navy;
-}
-
 intro p{
     width:90%;
-    margin: auto;
+    margin: -2rem auto auto;
     padding-top: 1%;
 }
 gl {
@@ -65,36 +63,39 @@ gl {
     font-weight: bold;
     font-size: 1.5em;
     margin: 2% auto 1% auto;
-    width: 90%;
-}
-footer {
-    display: block;
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 1%;
 }
 
 
 
 
-
+.prob3 {
+   text-align: center; 
+}
 #label-question {
     background: pink;
-    padding: 0 6%;
-    border: 2px solid black;
-    width:100%;
+    padding: auto 6%;
+    margin: 0 0 1%;
+    width: auto;
+    text-align: center;
 }
-#submit-button {
-    margin-top: 1%;
+#next-button {
+    background: #44BB55;
+    color: white;
+    padding: .5em 1em;
+    font-size: 16px;
+    margin: 3% auto;
+    cursor: pointer;
+    border-radius: 50px;
 }
 form {
     margin-left: 10%;
     margin-right: 10%;
 }
 question {
+    text-align: left;
     padding-top: 1%;
     padding-bottom: 1%;
-    border: 2px solid black;g
+    border: 2px solid black;
     border-bottom: 2px solid black;
 }
 question img {
@@ -104,4 +105,15 @@ question img {
 
 question, ans1, ans2, ans3, ans4 {
     display: block;
+}
+
+
+
+prob1, prob2, prob2-ans1, prob2-ans2, prob2-ans3, explanation, footer > text {
+    display: block;
+    color: gray;
+    mix-blend-mode: difference;
+}
+prob1, prob2 {
+    margin: 1rem auto;
 }
