@@ -1,0 +1,10 @@
+#title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    padding-right: 3rem;
+}
+td a {
+    display: block;
+    padding-bottom: .5rem;
+}

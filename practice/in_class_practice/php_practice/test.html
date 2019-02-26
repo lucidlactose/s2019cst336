@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+    </head>
+    <body>
+        
+    </body>
+    <script>
+        $("document").ready( function() {
+            $.ajax( {
+                type: "get",
+                url: "practice/in"
+            })
+            
+        })
+        function getCountyList() {        
+            var stateSelected = document.getElementById("state").value;
+            var url = "test.php?";
+            
+            var ajax;
+            if (window.XMLHttpRequest) {
+                ajax= new XMLHttpRequest();
+            }
+            
+            ajax.open("GET", url + stateSelected, true);
+            ajax.send();
+            
+            ajax.onreadystatechange=function() {
+                if (ajax.readyState==4 && ajax.status==200) {
+                    alert(ajax.responseText);  //displays value retrieved from PHP program
+                }
+            }  
+
+} //end Function
+
+    </script>
+</html>

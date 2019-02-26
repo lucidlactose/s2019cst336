@@ -1,0 +1,45 @@
+#wrong-password {
+    display: none;
+    padding-left: 1rem;
+    color: red;
+}
+#username-availability {
+    color: green;
+    padding-left: 1rem;
+}
+#submit {
+    border-radius: 50px;
+    background: black;
+    color: #bbb;
+    padding: .5rem 1rem;
+    margin: 1% auto;
+}
+td:first-child {
+    text-align: right;
+}
+html {
+    background: black;
+    overflow-x: hidden;
+}
+h1 {
+    text-align: center;
+    color: white;
+    background: #666;
+    margin: -1rem -1rem 2rem;
+    padding: 1.5rem 0 .5rem;
+}
+fieldset {
+    border: .7px solid black;
+    border-radius: 30px
+}
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+form {
+    display: block;
+    background: #bbb;
+    margin: 0 20%;
+    padding: .5rem 2rem;
+    border-radius: 30px;
+}

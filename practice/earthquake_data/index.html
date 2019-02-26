@@ -6,6 +6,15 @@
     <body>
         <!--http://api.openweathermap.org/data/2.5/forecast?id=524901&appid=34d5e85fb0dbd29d141a8987a8ef3a7a-->
         <!--when making a function call, give it an & to join the query-->
-
+        <input id="text" type="text"/>
+        <input id="button" type="button" value="check city"/>
     </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $("document").ready( function() {
+            $("#button").on("click", function() {
+                window.location.href="http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=34d5e85fb0dbd29d141a8987a8ef3a7a" + "&weather?q=" + $("#text").val();
+            })
+        })
+    </script>
 </html>
