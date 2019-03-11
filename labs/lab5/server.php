@@ -55,7 +55,7 @@
             }
         }
         // TODO: process the registration
-        if ($results->availability) {
+        if ($results->availability && $results->valid_password) {
             $_SESSION[$username] = $passwords[0];
             $jsonToReturn["message"] = "success";
         }
