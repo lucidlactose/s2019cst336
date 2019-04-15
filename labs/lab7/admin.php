@@ -41,13 +41,6 @@
                                                     .attr("value", "delete")
                                             )
                                             .append(
-                                                $("<input>")
-                                                    .attr("type", "button")
-                                                    .attr("name", "edit")
-                                                    .attr("class", "btn btn-info btn-md")
-                                                    .attr("value", "edit")
-                                            )
-                                            .append(
                                                 $("<span>")
                                                     .html(productName)
                                                     .attr("name", "name")
@@ -105,19 +98,18 @@
                                                 .attr("value", "delete")
                                         )
                                         .append(
-                                            $("<input>")
-                                                .attr("type", "button")
-                                                .attr("name", "edit")
-                                                .attr("class", "btn btn-info btn-md")
-                                                .attr("value", "edit")
+                                            $("<span>")
+                                                .html(key.product_id + " ")
+                                                .attr("name", "id")
+                                                .attr("class", "product-id")
                                         )
                                         .append(
                                             $("<span>")
                                                 .html(key.name)
                                                 .attr("name", "name")
                                                 .attr("class", "product-name")
+                                        )
                                 )
-                            )
                         })
                     },
                 });
@@ -138,6 +130,9 @@
         .product-name {
             font-weight: bold;
             font-size: 1.5em;
+        }
+        .product-id {
+            margin: 1.5em;
         }
         [name=delete], [name=edit] {
             margin: .2em;

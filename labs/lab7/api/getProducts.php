@@ -4,7 +4,7 @@ include "../dbConnection.php";
 
 $conn = getDatabaseConnection("signInPage");
 
-$sql = "SELECT name" .
+$sql = "SELECT *" .
         " FROM products" .
         " WHERE 1";
 
