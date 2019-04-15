@@ -49,3 +49,27 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/labs/lab6/api/getSearchResults.php(22): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab6/api/getSearchResults.php on line 22
+[26-Mar-2019 05:35:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user '”root”'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php(18): PDO->__construct('mysql:host=loca...', '???root???', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getCategories.php(5): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php on line 18
+[26-Mar-2019 05:35:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user '”root”'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php(18): PDO->__construct('mysql:host=loca...', '???root???', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getSearchResults.php(4): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php on line 18
+[26-Mar-2019 05:35:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user '”root”'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php(18): PDO->__construct('mysql:host=loca...', '???root???', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getSearchResults.php(4): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php on line 18
+[26-Mar-2019 05:38:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user '”root”'@'localhost' (using password: NO)' in /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php(18): PDO->__construct('mysql:host=loca...', '???root???', '')
+#1 /home/ubuntu/workspace/cst336/labs/lab6/api/getCategories.php(5): getDatabaseConnection('ottermart')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6/dbConnection.php on line 18

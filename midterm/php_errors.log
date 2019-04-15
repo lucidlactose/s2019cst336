@@ -1,0 +1,340 @@
+[27-Mar-2019 23:46:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:47:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 3' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:47:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:47:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, answer_type_id) AGAINST ('some')' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:48:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, answer_type_id) AGAINST (1)' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:49:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, answer_type_id) AGAINST ('1')' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:49:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, answer_type_id) AGAINST (/'1/')' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:49:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, answer_type_id) AGAINST (`'1`')' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:50:00 UTC] PHP Parse error:  syntax error, unexpected '1' (T_LNUMBER) in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 9
+[27-Mar-2019 23:50:12 UTC] PHP Parse error:  syntax error, unexpected 'some' (T_STRING) in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 9
+[27-Mar-2019 23:50:35 UTC] PHP Parse error:  syntax error, unexpected 'some' (T_STRING) in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 9
+[27-Mar-2019 23:50:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, answer_type_id) AGAINST (1)' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:52:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:52:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE user_id = 'jscrowton0'' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:55:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match
+        WHERE userd_id = 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:55:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE userd_id = 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:55:37 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE userd_id = 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:56:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE user_id = 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:56:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE user_id = 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:56:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE user_id LIKE 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:57:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, match_user_id)' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[27-Mar-2019 23:58:20 UTC] PHP Parse error:  syntax error, unexpected 'some' (T_STRING) in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 10
+[27-Mar-2019 23:58:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, match_user_id) 
+        AGAINST ("some")' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 16
+[27-Mar-2019 23:59:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, match_user_id) 
+        AGAINST ("some")' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 16
+[27-Mar-2019 23:59:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, match_user_id) 
+        AGAINST (\'some\')' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 16
+[27-Mar-2019 23:59:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, match_user_id) 
+        AGAINST (`'some`')' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 16
+[27-Mar-2019 23:59:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE MATCH (user_id, match_user_id) 
+        AGAINST (`some`)' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 16
+[28-Mar-2019 00:01:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        NATURAL JOIN user 
+        WHERE userId = 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 16
+[28-Mar-2019 00:02:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        NATURAL JOIN user 
+        WHERE userId = 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 16
+[28-Mar-2019 00:03:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 16
+[28-Mar-2019 00:03:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:03:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:03:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'field list'' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:03:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'userId' in 'field list'' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:07:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE user_id LIKE 'jscrowton0'' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:07:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE user_id = 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:07:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE user_id LIKE 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:07:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:08:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE user_id LIKE 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:08:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE user_id = 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:08:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match 
+        WHERE 1' at line 2' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:08:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:08:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:09:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:09:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cinder.Id' doesn't exist' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:09:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'cinder.id' doesn't exist' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:10:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:10:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:10:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match' at line 1' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:11:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:11:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'match WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(13): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 13
+[28-Mar-2019 00:14:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOT WHERE user_id LIKE 1' at line 3' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:14:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1' at line 3' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 15
+[28-Mar-2019 00:20:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NATURAL JOIN user' at line 5' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(14): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 14
+[28-Mar-2019 00:20:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NATURAL JOIN user' at line 5' in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getMatch.php(14): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getMatch.php on line 14
+[28-Mar-2019 00:37:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php:14
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getHistory.php(14): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php on line 14
+[28-Mar-2019 00:43:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN 'user' 
+        ON 'match.user_id' = 'user.Id' at line 4' in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getHistory.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php on line 13
+[28-Mar-2019 00:43:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN 'user' 
+        ON 'match.user_id' = 'user.Id' at line 4' in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getHistory.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php on line 13
+[28-Mar-2019 00:44:08 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INNER JOIN 'user' 
+        ON 'match.user_id' = 'user.Id' at line 4' in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php:13
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getHistory.php(13): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php on line 13
+[28-Mar-2019 00:44:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' 
+        ON 'user.Id' = 'match.user_id' at line 3' in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getHistory.php(12): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php on line 12
+[28-Mar-2019 00:45:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' 
+        ON 'match.user_id' = 'user.Id' at line 3' in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getHistory.php(12): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php on line 12
+[28-Mar-2019 00:45:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''user' 
+        ON 'match.user_id' = 'user.id' at line 3' in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getHistory.php(12): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php on line 12
+[28-Mar-2019 00:45:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'match.user_id' in 'on clause'' in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php:12
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/midterm/api/getHistory.php(12): PDOStatement->execute(NULL)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/midterm/api/getHistory.php on line 12

@@ -1,0 +1,49 @@
+body {
+    text-align: center;
+    overflow-x: hidden;
+}
+
+#history {
+    display: none;
+}
+
+
+
+
+#profile-body {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+    padding: 1rem 3rem;
+}
+#profile-image img{
+    width: 100%;
+}
+#profile-details {
+    width: 50%;
+    display: inline-block;
+}
+#profile-description {
+    width: 100%;
+    text-align: left;
+}
+
+#dislike-img, #like-img {
+    width: 25px;
+}
+
+
+
+#footer {
+    display: flex;
+    flex-direction: horizontal;
+    justify-content: center;
+}
+#button {
+    padding: 0 15%;
+}
+#dislike-button, #like-button, #neither-button {
+    width: 6.5rem;
+    font-weight: bold;
+    padding: .25rem .5rem;
+}

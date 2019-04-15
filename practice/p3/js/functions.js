@@ -9,9 +9,7 @@
                 } else {
                     return "img/seven.png";
                 }
-                
                 //return some image link
-                
             }
             function randomizeImages() {
                 $("#img1").attr("src", randomImg())
@@ -21,9 +19,6 @@
             
             function showText() {
                 var amount = 0;
-                // $("#img1").attr("src", "img/seven.png")
-                // $("#img2").attr("src", "img/seven.png")
-                // $("#img3").attr("src", "img/seven.png")
              
                 if ($("#img1").attr("src") == "img/cherry.png" 
                     && $("#img2").attr("src") == "img/cherry.png"

@@ -238,3 +238,7 @@
 [11-Mar-2019 00:56:54 UTC] PHP Parse error:  syntax error, unexpected '===' (T_IS_IDENTICAL) in /home/ubuntu/workspace/cst336/labs/lab5/server.php on line 37
 [11-Mar-2019 00:57:07 UTC] PHP Parse error:  syntax error, unexpected '&&' (T_BOOLEAN_AND) in /home/ubuntu/workspace/cst336/labs/lab5/server.php on line 37
 [11-Mar-2019 01:22:36 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/cst336/labs/lab5/server.php on line 35
+[15-Apr-2019 15:31:11 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/ubuntu/workspace/cst336/labs/lab7/index.php on line 2
+[15-Apr-2019 15:31:11 UTC] PHP Stack trace:
+[15-Apr-2019 15:31:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/labs/lab7/index.php:0
+[15-Apr-2019 15:31:11 UTC] PHP   2. session_destroy() /home/ubuntu/workspace/cst336/labs/lab7/index.php:2
