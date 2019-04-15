@@ -9,8 +9,7 @@ $sql = "INSERT INTO products (name) VALUE (:name)";
 
 
 if (empty($_POST["name"])) {
-    json_encode(array("status" => failure,
-                        "reason" =>"no name provided"))
+    echo json_encode(array("status" => "success", "reason" =>"no name provided"));
     exit;
 }
 
@@ -19,7 +18,7 @@ $np[":name"] = $_POST["name"];
 
 $stmt = $conn->prepare($sql);
 $stmt->execute($np);
-$results = $stmt->fetchALL(PDO::FETCH_ASSOC);
-json_encode(array("status"=>"success"));
+
+echo json_encode(array("status"=>"success", "reason" => "works"));
 
 ?>

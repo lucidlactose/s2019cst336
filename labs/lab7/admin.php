@@ -8,27 +8,56 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+
     <script>
         $(document).ready(function() {
-            some = 1;
             getProducts();
-            $("[name=edit]").on("click", editProduct(some));
             $("[name=delete]").on("click", deleteProduct);
+            $("[name=insert]").on("click", insertProduct);
             
-            function editProduct() {
-                productName = $("")
+            function insertProduct() {
+                productName = $("[name=productNameInsert]").val();
                 $.ajax({
                     type: "POST",
-                    url: "api/editProduct.php",
+                    url: "api/insertProduct.php",
                     dataType: "json",
                     data : {
-                        
+                        "name": productName
                     },
                     success : function(data, status) {
+                        console.log("success")
                         console.log(data)
-                        data.forEach(function(key) {
-                            
-                        })
+                        if (data.reason === "works") {
+                            $(".products")
+                                    .append(
+                                        $("<div>")
+                                            .attr("class", "product-container")
+                                            .append(
+                                                $("<input>")
+                                                    .attr("type", "button")
+                                                    .attr("name", "delete")
+                                                    .attr("class", "btn btn-info btn-md")
+                                                    .attr("value", "delete")
+                                            )
+                                            .append(
+                                                $("<input>")
+                                                    .attr("type", "button")
+                                                    .attr("name", "edit")
+                                                    .attr("class", "btn btn-info btn-md")
+                                                    .attr("value", "edit")
+                                            )
+                                            .append(
+                                                $("<span>")
+                                                    .html(productName)
+                                                    .attr("name", "name")
+                                                    .attr("class", "product-name")
+                                    )
+                                )
+                            }
+                            else {
+                                
+                            }
                     },
                     complete : function(data, status) {
                         // console.log(data);
@@ -46,9 +75,6 @@
                     },
                     success : function(data, status) {
                         console.log(data)
-                        data.forEach(function(key) {
-                            
-                        })
                     },
                     complete : function(data, status) {
                         // console.log(data);
@@ -61,7 +87,6 @@
                     url: "api/getProducts.php",
                     dataType: "json",
                     success : function(data, status) {
-                        console.log(data)
                         data.forEach(function(key) {
                             $(".products")
                                 .append(
@@ -73,7 +98,6 @@
                                                 .attr("name", "delete")
                                                 .attr("class", "btn btn-info btn-md")
                                                 .attr("value", "delete")
-                                                .attr("for", key.name)
                                         )
                                         .append(
                                             $("<input>")
@@ -81,7 +105,6 @@
                                                 .attr("name", "edit")
                                                 .attr("class", "btn btn-info btn-md")
                                                 .attr("value", "edit")
-                                                .attr("for", key.name)
                                         )
                                         .append(
                                             $("<span>")
@@ -128,9 +151,10 @@
             <div id="login-box" class="col-md-12">
             <form id="login-form" class="form" action="" method="post">
               <h3 class="text-center text-info">Products</h3>
+              
               <input type="button" name= "insert" class="btn btn-info btn-md" value="insert">
+              <input type="text" name="productNameInsert">
               <div class="products">
-                  
               </div>
               <div class="form-group">
                 <input type="button" name="logout" class="btn btn-info btn-md" value="logout">

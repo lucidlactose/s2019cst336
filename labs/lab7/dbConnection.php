@@ -1,5 +1,17 @@
 <?php
 
+
+
+
+// DOES NOT WORK WITH HEROKU CHANGE THAT
+
+
+
+
+
+
+
+
 function getDatabaseConnection($dbname = "signInPage") {
     $host="localhost";
     $username="root";

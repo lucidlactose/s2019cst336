@@ -164,3 +164,16 @@ Stack trace:
 [15-Apr-2019 18:27:49 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
 [15-Apr-2019 18:27:58 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
 [15-Apr-2019 18:57:01 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[15-Apr-2019 18:58:58 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[15-Apr-2019 19:02:34 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:02:47 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:03:00 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:03:02 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:03:03 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:03:26 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:03:28 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:03:32 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:03:54 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:04:03 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:04:10 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
+[15-Apr-2019 19:07:26 UTC] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 21
