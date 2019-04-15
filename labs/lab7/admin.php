@@ -52,12 +52,17 @@
                                                     .html(productName)
                                                     .attr("name", "name")
                                                     .attr("class", "product-name")
+                                            )
                                     )
-                                )
-                            }
-                            else {
-                                
-                            }
+                            $("#reason")
+                                .html("product inserted")
+                                .css("color", "green");
+                        }
+                        else {
+                            $("#reason")
+                                .html(data.reason)
+                                .css("color", "red");
+                        }
                     },
                     complete : function(data, status) {
                         // console.log(data);
@@ -154,6 +159,7 @@
               
               <input type="button" name= "insert" class="btn btn-info btn-md" value="insert">
               <input type="text" name="productNameInsert">
+              <span id="reason"></span>
               <div class="products">
               </div>
               <div class="form-group">
