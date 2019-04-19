@@ -1,32 +1,24 @@
 <?php
 
-
-
-
-// DOES NOT WORK WITH HEROKU CHANGE THAT
-
-
-
-
-
-
-
-
-function getDatabaseConnection($dbname = "signInPage") {
-    $host="localhost";
-    $username="root";
-    $password="";
+function getDatabaseConnection($dbname = "ottermart") {
+    //C9 db info
+    $host = "localhost";
+    $username = "root";
+    $password = "";
     
-    if (strpos($_SERVER["HTTP_HOST"], "herokuapp") !== false) {
-        $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-        $host = $url["host"];
-        $dbname = substr($url["path"], 1);
-        $username = $url["user"];
-        $password = $url["pass"];
-    }
+    //when connecting from Heroku
+    // if  (strpos($_SERVER['HTTP_HOST'], 'herokuapp') !== false) {
+    //     $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+    //     $host = $url["host"];
+    //     $dbname = substr($url["path"], 1);
+    //     $username = $url["user"];
+    //     $password = $url["pass"];
+    // }
+    
     $dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     $dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     return $dbConn;
 }
+
 ?>
