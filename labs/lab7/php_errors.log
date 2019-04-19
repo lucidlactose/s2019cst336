@@ -177,3 +177,71 @@ Stack trace:
 [15-Apr-2019 19:04:03 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
 [15-Apr-2019 19:04:10 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 14
 [15-Apr-2019 19:07:26 UTC] PHP Parse error:  syntax error, unexpected '$stmt' (T_VARIABLE) in /home/ubuntu/workspace/cst336/labs/lab7/api/insertProduct.php on line 21
+[18-Apr-2019 01:42:26 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:43:00 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:43:17 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:43:27 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:44:01 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:44:13 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:44:37 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:45:02 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:45:31 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:46:03 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:46:43 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:47:23 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:47:39 UTC] PHP Parse error:  syntax error, unexpected 'exit' (T_EXIT) in /home/ubuntu/workspace/cst336/labs/lab7/api/editProduct.php on line 20
+[18-Apr-2019 01:47:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE product_id (   SELECT product_id   FROM products   WHERE name = 'soap')' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 26
+[18-Apr-2019 01:53:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE product_id (   SELECT product_id   FROM products   WHERE name LIKE 'soap')' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 25
+[18-Apr-2019 01:53:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE product_id (   SELECT product_id   FROM products   WHERE name LIKE `soap`)' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 25
+[18-Apr-2019 02:11:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name LIKE `soap`' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(21): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 21
+[19-Apr-2019 02:04:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'WHERE name LIKE `soap`' at line 1' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(21): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 21
+[19-Apr-2019 02:06:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'soap' in 'where clause'' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:21
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(21): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 21
+[19-Apr-2019 02:06:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(22): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 22
+[19-Apr-2019 02:10:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(22): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 22
+[19-Apr-2019 02:11:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(22): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 22
+[19-Apr-2019 02:11:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(22): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 22
+[19-Apr-2019 02:11:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php(22): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/api/deleteProduct.php on line 22

@@ -13,11 +13,13 @@
     <script>
         $(document).ready(function() {
             getProducts();
-            $("[name=delete]").on("click", deleteProduct);
+            $("body").on("click", "#deleteButton", deleteProduct);
             $("[name=insert]").on("click", insertProduct);
             
             function insertProduct() {
                 productName = $("[name=productNameInsert]").val();
+                $("[name=productNameInsert]").val("");
+                // productName = productName.split(" ").join("");
                 $.ajax({
                     type: "POST",
                     url: "api/insertProduct.php",
@@ -26,8 +28,8 @@
                         "name": productName
                     },
                     success : function(data, status) {
-                        console.log("success")
-                        console.log(data)
+                        // console.log("success")
+                        // console.log(data)
                         if (data.reason === "works") {
                             $(".products")
                                     .append(
@@ -36,8 +38,9 @@
                                             .append(
                                                 $("<input>")
                                                     .attr("type", "button")
-                                                    .attr("name", "delete")
+                                                    .attr("name", productName)
                                                     .attr("class", "btn btn-info btn-md")
+                                                    .attr("id", "deleteButton")
                                                     .attr("value", "delete")
                                             )
                                             .append(
@@ -63,16 +66,18 @@
                 });
             }
             function deleteProduct() {
-                productName = $("")
+                console.log(this);
+                name = this.name;
+                $("[name=" + name + "div]").remove();
                 $.ajax({
                     type: "POST",
-                    url: "api/editProduct.php",
+                    url: "api/deleteProduct.php",
                     dataType: "json",
                     data : {
-                        
+                        "name": name
                     },
                     success : function(data, status) {
-                        console.log(data)
+                        console.log("success")
                     },
                     complete : function(data, status) {
                         // console.log(data);
@@ -88,20 +93,15 @@
                         data.forEach(function(key) {
                             $(".products")
                                 .append(
-                                    $("<div>")
+                                    $("<div name=" + key.name + "div>")
                                         .attr("class", "product-container")
                                         .append(
                                             $("<input>")
                                                 .attr("type", "button")
-                                                .attr("name", "delete")
+                                                .attr("name", key.name)
                                                 .attr("class", "btn btn-info btn-md")
+                                                .attr("id", "deleteButton")
                                                 .attr("value", "delete")
-                                        )
-                                        .append(
-                                            $("<span>")
-                                                .html(key.product_id + " ")
-                                                .attr("name", "id")
-                                                .attr("class", "product-id")
                                         )
                                         .append(
                                             $("<span>")
