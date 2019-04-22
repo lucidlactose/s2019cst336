@@ -1,0 +1,233 @@
+[22-Apr-2019 19:46:17 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/cst336/practice/p9/dbConnections.php on line 22
+[22-Apr-2019 19:46:17 UTC] PHP Stack trace:
+[22-Apr-2019 19:46:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:0
+[22-Apr-2019 19:46:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM '1' = '1' + 1 WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 16
+[22-Apr-2019 19:47:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM '1' = '1' + 1 WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:18
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(18): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 18
+[22-Apr-2019 19:50:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM '1' = '1' + 1 WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(20): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 20
+[22-Apr-2019 19:51:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM '1' = '1' + 1 WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 22
+[22-Apr-2019 19:51:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM NULL = NULL + 1 WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 22
+[22-Apr-2019 19:51:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM 'option5' = 'option5' + 1 WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:22
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(22): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 22
+[22-Apr-2019 19:52:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM 'option5' = '1' + 1 WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 23
+[22-Apr-2019 19:52:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM 'option5' = '1' WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 23
+[22-Apr-2019 19:53:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option5' = '1' WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 23
+[22-Apr-2019 19:54:45 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option5' = '1' WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 23
+[22-Apr-2019 19:55:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option5' = '2' WHERE 1' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 24
+[22-Apr-2019 19:55:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option5' = '2'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 23
+[22-Apr-2019 19:56:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' = '2'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 24
+[22-Apr-2019 19:57:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'='2'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 24
+[22-Apr-2019 19:58:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'='2'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 26
+[22-Apr-2019 19:58:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'='2'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 26
+[22-Apr-2019 19:59:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'='2'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:26
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(26): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 26
+[22-Apr-2019 20:00:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'='2'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:00:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'='2'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:00:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'='2'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:03:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:03:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'=2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:04:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(29): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 29
+[22-Apr-2019 20:04:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(29): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 29
+[22-Apr-2019 20:05:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000]: General error' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:29
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(29): PDOStatement->fetchAll(2)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 29
+[22-Apr-2019 20:05:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'=2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:05:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column ''option2'' in 'field list'' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:06:01 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'=2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:06:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'=2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:07:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'=2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:28
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(28): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 28
+[22-Apr-2019 20:08:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'=2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:09:47 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:09:55 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2'=2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:10:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' =2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:11:25 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':option =2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:11:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' =2' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 24
+[22-Apr-2019 20:12:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' ='22'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 24
+[22-Apr-2019 20:14:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' ='23'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:24
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(24): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 24
+[22-Apr-2019 20:15:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' ='24'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:15:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' ='25'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:15:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' ='26'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:16:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' = '27'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:18:10 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''option2' = '28'' at line 1' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:25:54 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:25
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(25): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 25
+[22-Apr-2019 20:26:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 23
+[22-Apr-2019 20:26:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php:23
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p9/api/functions.php(23): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p9/api/functions.php on line 23
