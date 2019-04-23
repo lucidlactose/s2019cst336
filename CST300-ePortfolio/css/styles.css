@@ -38,6 +38,27 @@ nav a:hover {
 #welcomeText {
     text-align: left;
 }
+#content {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5% 15%;
+}
+#left-aligned, #artifact-list {
+    text-align: left;
+}
+#ul-list {
+    margin: 1rem -6rem -2rem;
+}
+#ul-list1 {
+    margin: 1rem -6rem 0;
+}
+#artifact-list {
+    margin: 3rem 0 0;
+    padding-top: 1.1rem;
+    border-top: 1px solid black;
+}
 footer {
     clear:left;
     text-align: center;
