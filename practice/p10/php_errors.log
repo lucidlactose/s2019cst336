@@ -1,0 +1,70 @@
+[29-Apr-2019 19:44:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'quizLab.quizLab' doesn't exist' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:56
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(56): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 56
+[29-Apr-2019 19:45:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:57
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(57): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 57
+[29-Apr-2019 19:47:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:57
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(57): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 57
+[29-Apr-2019 19:48:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:63
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(63): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 63
+[29-Apr-2019 19:48:41 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:63
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(63): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 63
+[29-Apr-2019 19:48:57 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:63
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(63): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 63
+[29-Apr-2019 19:49:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:63
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(63): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 63
+[29-Apr-2019 19:50:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:63
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(63): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 63
+[29-Apr-2019 19:52:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(score = '5', taken = '1') WHERE email LIKE 'jvillaruel@csumb.edu'' at line 1' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:44
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(44): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 44
+[29-Apr-2019 19:53:42 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(score = '5', taken = '1') WHERE email LIKE 'jvillaruel@csumb.edu'' at line 1' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:44
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(44): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 44
+[29-Apr-2019 19:53:44 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(score = '5', taken = '1') WHERE email LIKE 'jvillaruel@csumb.edu'' at line 1' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:44
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(44): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 44
+[29-Apr-2019 19:53:52 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(score = '5', taken = '1') WHERE email LIKE 'jvillaruel@csumb.edu'' at line 1' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:44
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(44): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 44
+[29-Apr-2019 19:54:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(score = '5', taken = '1') WHERE email LIKE 'jvillaruel@csumb.edu'' at line 1' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:46
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(46): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 46
+[29-Apr-2019 19:56:05 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(score = '5', taken = '1') WHERE email LIKE 'jvillaruel@csumb.edu'' at line 1' in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php(51): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/practice/p10/api/checkAnswer.php on line 51

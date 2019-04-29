@@ -1,25 +1,35 @@
 $(document).ready(function() {
-    $('body').on('click','#img-button', updateImage);
-    $("[name=button]").on("click", searchImage);
+    // create a way to store favorites
+    favorites = []
+    $('body').on('click','#img-button', toggleImage);
+    $("[name=search]").on("click", searchImage);
     
-    // function searchImage() {
-    //     $.ajax({
-    //         url: "api/images.php",
-    //         success: function(data, status) {
-    //             console.log(data)
-    //         }
-    //     })
-    // }
+    function toggleImage() {
+        if (this.src == "img/favorite-on.png") {
+            toggleOff(tag);
+        }
+        else {
+            toggleOn(tag);
+        }
+    }
     
-    function updateImage() {
+    function toggleOff(tag) {
+        console.log(favorites);
+        $("[name=" + tag.name + "]").attr("src", "img/favorite-on.png");
+        
+    }
+    
+    function toggleOn(tag) {
         // now add this to the thing
-        console.log(this.name);
-        $("[name=" + this.name + "]").attr("src", "img/favorite-on.png");
+        console.log(tag);
+        // console.log($("[name=" + this.name + "]").parent()[0]);
+        favorites.push(tag.accessKey);
+        console.log(favorites);
+        $("[name=" + tag.name + "]").attr("src", "img/favorite-on.png");
     }
     
     function searchImage() {
         query = $("[name=query]").val();
-        console.log(query)
         
         $.ajax({
             url: "https://pixabay.com/api/",
@@ -31,58 +41,43 @@ $(document).ready(function() {
                 q: query,
             },
             success:function(data, success) {
-                console.log(data)
-                for (i=0; i < data.hits.length; ++i) {
-                    if (i < 3) {
-                        $(".first")
-                            .append("<td>")
-                                .append(
-                                    $("<img>")
-                                        .attr("src", data.hits[i].largeImageURL)
-                                        .attr("width", "200")
-                                )
-                                .append(
-                                    $("<img>")
-                                        .attr("src", "img/favorite-off.png")
-                                        .attr("id", "img-button")
-                                        .attr("name", "img"+i)
-                                        .attr("width", "20")
-                                )
-                    }
-                    else if (i < 6) {
-                        $(".second")
-                            .append("<td>")
-                                .append(
-                                $("<img>")
-                                    .attr("src", data.hits[i].largeImageURL)
-                                    .attr("width", "200")
-                                )
-                                .append(
-                                    $("<img>")
-                                        .attr("src", "img/favorite-off.png")
-                                        .attr("id", "img-button")
-                                        .attr("name", "img"+i)
-                                        .attr("width", "20")
-                                )
-                    }
-                    else {
-                        $(".third")
-                            .append("<td>")
-                                .append(
-                                $("<img>")
-                                    .attr("src", data.hits[i].largeImageURL)
-                                    .attr("width", "200")
-                                )
-                                .append(
-                                    $("<img>")
-                                        .attr("src", "img/favorite-off.png")
-                                        .attr("id", "img-button")
-                                        .attr("name", "img"+i)
-                                        .attr("width", "20")
-                                )
-                    }
-                }
+                // console.log(data)
+                addImages(data);
             }
         });
+    }
+    
+    function addImages(data) {
+        for (i=0; i < data.hits.length; ++i) {
+            if (i < 3) {
+                addImage("first", i, data);
+            }
+            else if (i < 6) {
+                addImage("second", i, data);
+            }
+            else {
+                addImage("third", i, data);
+            }
+        }
+    }
+    
+    function addImage(location, i, data) {
+        $("."+location)
+            .append("<td>")
+                .append(
+                $("<img>")
+                    .attr("src", data.hits[i].largeImageURL)
+                    .attr("width", "200")
+                )
+                .append(
+                    $("<img>")
+                        .attr("src", "img/favorite-off.png")
+                        .attr("id", "img-button")
+                        .attr("name", "img"+i)
+                        // .attr("name", data.hits[i].largeImageURL)
+                        .attr("width", "20")
+                        .attr("accessKey", data.hits[i].largeImageURL)
+                        // .attr("value", "img")
+                );
     }
 });
