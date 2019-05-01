@@ -1,0 +1,50 @@
+body {
+    background-color: #9ce;
+    /*overflow-x: hidden;*/
+}
+.container {
+    /*position: absolute;*/
+    background-color: #eee;
+}
+.carousel-inner {
+    padding: 0 16%;
+    border: 1px solid black;
+    background-color: #000;
+}
+.carousel-inner img {
+    /*width: 100;*/
+    /*padding: auto 20%;*/
+    height: 500px;
+}
+.active {
+    text-align: center;
+}
+.carousel-control-prev, .carousel-control-next {
+    /*border: 1px solid black;*/
+    /*background-color: white;*/
+}
+#caption {
+    /*background-color: white;*/
+    text-align: left;
+    width: 80%;
+    margin: 2rem auto 0;
+    padding: 0 5% 1rem;
+}
+#division {
+    width: 50%;
+    background-color: #aaa;
+    border-width: 1px;
+}
+#file-upload-area {
+    padding-bottom: 9rem;
+}
+#fileInput {
+    display: none;
+}
+#uploadButtons {
+    margin: 2rem;
+
+}
+.progress-bar {
+    /*margin-top: 1rem;*/
+}
