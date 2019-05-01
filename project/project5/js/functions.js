@@ -1,23 +1,53 @@
-$(function() {
-    $("#pickFilesButton").on("click", function() {
-        $("[name=fileName]").trigger("click");
-    })
-    
-    
-    
-    // 3. Send files with ajax
-    $('#uploadFilesButton').click(function(e) {
-        setProgress(0);
-        var formData = new FormData($('form')[0]);
+$(function(){
+
+    loadImages();
+
+    function loadImages() {
+        var email_address = $("#email_address").html().trim();
+        console.log("ladiing")
         $.ajax({
-                url: "uploadFile.php",
-                type: "POST",
+            url: "api/getImages.php",
+            type: "GET",
+            data : {
+                "email_address": email_address
+            },
+            // dataType: "json",
+            success: function(data, status) {
+                // add the images
+                console.log("saoidjasoidj")
+                $('#images').html(data);
+            },
+            complete: function(data, status) {
+                console.log(data)
+            }
+        });
+    }
+    $('#imageUpload').on('submit', function(event){
+        console.log('oskad')
+        event.preventDefault();
+        console.log("something")
+        setProgress(0);
+        
+        var image_name = $('#image').val();
+        var formData = new FormData($('form')[0]);
+        var email_address = $("#email_address").html().trim();
+        var caption = $("#caption").val();
+        
+        console.log("Caption: " + caption);
+        console.log(email_address);
+        
+        if(image_name == '') {
+            alert("Please Select Image");
+            return false;
+        }
+        else {
+            $.ajax({
+                url:"api/uploadImage.php",
+                method:"POST",
                 data: formData,
-                processData: false,
-                contentType: false,
-                mimeType: "multipart/form-data",
-                cache: false,
-                // This part gives up chunk progress of the file upload
+                contentType:false,
+                cache:false,
+                processData:false,
                 xhr: function() {
                     //upload Progress
                     var xhr = $.ajaxSettings.xhr();
@@ -34,12 +64,32 @@ $(function() {
                         }, true);
                     }
                     return xhr;
+                },
+                success:function(data)   {
+                    $('#image').val('');
+                    loadImages();
                 }
             })
             .done(function(data, status, xhr) {
                 console.log('upload done');
                 //window.location.href = "<?php echo BASE_PATH?>/assets/<?php echo $controller->group ?>";
-                console.log(xhr);
+                // console.log(xhr);
+                $.ajax({
+                    url: "api/updateImageDetails.php",
+                    type: "POST",
+                    data: {
+                        "email_address": email_address, 
+                        "caption": caption
+                    },                      
+                    dataType: "json",
+                    success: function(data, status) {
+                        console.log("success")
+                        // console.log(data)
+                    },
+                    complete: function(data, status) {
+                        // console.log(data);
+                    }
+                });
                 $("#results").html(xhr.responseText)
             })
             .fail(function(xhr) {
@@ -49,11 +99,10 @@ $(function() {
             .always(function() {
                 //console.log('done processing upload');
             });
+        }
     });
-
     function setProgress(percent) {
         $(".progress-bar").css("width", +percent + "%");
         $(".progress-bar").text(percent + "%");
-    }
-
-});
+    } 
+});  

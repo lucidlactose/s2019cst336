@@ -1,0 +1,2 @@
+[01-May-2019 06:18:04 UTC] PHP Parse error:  syntax error, unexpected ''Location: noEmail.php");' (T_ENCAPSED_AND_WHITESPACE) in /home/ubuntu/workspace/cst336/project/project5/index.php on line 3
+[01-May-2019 06:29:42 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/cst336/project/project5/index.php on line 5

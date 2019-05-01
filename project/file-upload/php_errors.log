@@ -28,3 +28,23 @@
 [24-Apr-2019 21:37:36 UTC] PHP Fatal error:  require(): Failed opening required '/home/ubuntu/workspace/examples/file-upload/form../../../vendor/autoload.php' (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/examples/file-upload/form/uploadFile.php on line 2
 [24-Apr-2019 21:37:36 UTC] PHP Stack trace:
 [24-Apr-2019 21:37:36 UTC] PHP   1. {main}() /home/ubuntu/workspace/examples/file-upload/form/uploadFile.php:0
+[01-May-2019 03:39:59 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php on line 26
+[01-May-2019 03:39:59 UTC] PHP Stack trace:
+[01-May-2019 03:39:59 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:0
+[01-May-2019 03:39:59 UTC] PHP   2. reArrayFiles() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:5
+[01-May-2019 03:39:59 UTC] PHP   3. array_keys() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:26
+[01-May-2019 03:42:26 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php on line 26
+[01-May-2019 03:42:26 UTC] PHP Stack trace:
+[01-May-2019 03:42:26 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:0
+[01-May-2019 03:42:26 UTC] PHP   2. reArrayFiles() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:5
+[01-May-2019 03:42:26 UTC] PHP   3. array_keys() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:26
+[01-May-2019 04:26:27 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php on line 26
+[01-May-2019 04:26:27 UTC] PHP Stack trace:
+[01-May-2019 04:26:27 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:0
+[01-May-2019 04:26:27 UTC] PHP   2. reArrayFiles() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:5
+[01-May-2019 04:26:27 UTC] PHP   3. array_keys() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:26
+[01-May-2019 04:28:05 UTC] PHP Warning:  array_keys() expects parameter 1 to be array, null given in /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php on line 26
+[01-May-2019 04:28:05 UTC] PHP Stack trace:
+[01-May-2019 04:28:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:0
+[01-May-2019 04:28:05 UTC] PHP   2. reArrayFiles() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:5
+[01-May-2019 04:28:05 UTC] PHP   3. array_keys() /home/ubuntu/workspace/cst336/project/file-upload/ajax-post/uploadFile.php:26
