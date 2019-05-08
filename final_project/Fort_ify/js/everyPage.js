@@ -13,6 +13,7 @@ function closeNav() {
 }
 var meUser;
 function search() {
+    console.log("searching")
     username = $("[name=search]").val();
     if (username !== "") {
         username = username.split(" ").join("+");
@@ -28,7 +29,7 @@ function search() {
             url: "API/logQuery.php",
             type: "POST",
             data: {
-                "id": meUser, 
+                "id": "asdopasd", 
                 "search": username,
             },
             dataType: "text",
@@ -36,9 +37,9 @@ function search() {
                 console.log(data)
                 window.location.href = "searchResults.php?username=" + username;
             },
-            // complete: function(data, status) {
-            //     console.log(data)
-            // }
+            complete: function(data, status) {
+                console.log("finished searchign")
+            }
         })
     }
 }
