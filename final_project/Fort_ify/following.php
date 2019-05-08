@@ -11,7 +11,7 @@
         <script type="text/javascript" src="js/showFollowing.js"></script>
         
         <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <meta name="google-signin-client_id" content="771332740040-bst02ajh5o98uga1dk3e36sv30pjknuh.apps.googleusercontent.com">
+        <meta name="google-signin-client_id" content="771332740040-lj3mssd5n8d1sfgo7fj32l5t32d5tcsu.apps.googleusercontent.com">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         
                 
