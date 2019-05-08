@@ -12,7 +12,7 @@
         <script type="text/javascript" src="js/profilePage.js"></script>
         <script type="text/javascript" src="js/homePage.js"></script>
         <script src="https://apis.google.com/js/platform.js" async defer></script>
-        <meta name="google-signin-client_id" content="771332740040-bst02ajh5o98uga1dk3e36sv30pjknuh.apps.googleusercontent.com">
+        <meta name="google-signin-client_id" content="771332740040-lj3mssd5n8d1sfgo7fj32l5t32d5tcsu.apps.googleusercontent.com">
         <!--<link type="text/css" rel="stylesheet" href="magicscroll-trial/magicscroll/magicscroll.css"/>-->
         <!--<script type="text/javascript" src="magicscroll-trial/magicscroll/magicscroll.js"></script>-->
         
