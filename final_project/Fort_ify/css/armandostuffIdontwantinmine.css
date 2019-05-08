@@ -1,0 +1,365 @@
+/******************************************************/
+/*********       THEMES FOR WEBAPP      ***************/
+/******************************************************/
+body {
+	font-family: Arial;
+	margin-left: -7px;
+	margin-right: -7px;
+	margin-top: -7px;
+	overflow-x:hidden;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@font-face { 
+		font-family: fortniteFont;
+		src: url('../src/fortnite.ttf');
+} 
+
+/******************************************************/
+/*********       THEMES FOR WEBAPP      ***************/
+/*****************      END     ***********************/
+
+/*------------------------------------------------------------------------------------*/
+
+/******************************************************/
+/*********       NAVIGATION-SECTION     ***************/
+/******************************************************/
+.navigationBar{
+		display:flex;
+		
+}
+
+form.navigationBar input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	float: left;
+	width: 26%;
+	height:10%;
+	background: #f1f1f1;
+}
+
+form.navigationBar button {
+	float: left;
+	width: 4%;
+	padding: 10px;
+	background: #2196F3;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-left: none;
+	cursor: pointer;
+	height:10%;
+}
+
+
+header{
+		padding-top:2%;
+		position:sticky;
+		top:0;
+		background-image: linear-gradient(to right, #C70039, #ECD0D0);
+		width:100%;
+		
+}
+nav{
+		padding-left: 4%;
+		font-size:20px;
+				
+}
+
+#rankingsTab, #newsTab, #streamingTab{
+		padding-left:30px;
+		color:white;
+}
+
+#logo{
+		padding-right:2%;
+		padding-left:2%
+}
+/******************************************************/
+/*********       NAVIGATION-SECTION     ***************/
+/*****************     END     ************************/
+
+/*------------------------------------------------------------------------------------*/
+/******************************************************/
+/*********        SIDE BAR-SECTION        *************/
+/******************************************************/
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+#sideMenu{
+	font-size:30px;
+	cursor:pointer;
+	padding-left:10%;
+	
+}
+
+/******************************************************/
+/*********        SIDE BAR-SECTION        *************/
+/****************       END       *********************/
+/*------------------------------------------------------------------------------------*/
+
+
+
+/*************THE USERS INFORMATION TABLE**************/
+.limiter1{
+	width: 1366px;
+	margin: 0 auto;
+}
+
+.wrap1{
+	width: 900px;
+}
+
+table {
+	width: 30%;
+}
+
+.column11{
+	width: 33%;
+	padding-left: 40px;
+}
+
+.column12{
+	width: 20%;
+	text-align: center;
+}
+
+.table1-body td {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.table1.ver1 .table1-body tr:nth-child(even) {
+	background-image: linear-gradient(#84DEFF, #2DA3E4);
+}
+.table1.ver1 .table1-body tr:nth-child(odd) {
+	background-image: linear-gradient(#7BFF9B, #2DE458);
+}
+/**************************************************/
+/*************RANKING BY KILLS TABLE**************/
+.limiter2{
+	width: 500px;
+	margin: 0 auto;
+	font-size: 25px;
+}
+
+.wrap2{
+	width: 1500px;
+	margin-left: -100px;
+}
+
+table {
+	width: 30%;
+}
+
+.column21{
+	width: 33%;
+	height: 70px;
+	padding-left: 40px;
+}
+
+.column22{
+	width: 20%;
+	text-align: center;
+}
+
+.table2-body td {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.table2.ver1 .table2-body tr:nth-child(even) {
+	background-image: linear-gradient(#84DEFF, #2DA3E4);
+}
+.table2.ver1 .table2-body tr:nth-child(odd) {
+	background-image: linear-gradient(#84DEFF, #2DA3E4);
+}
+/**************************************************/
+/*************THE USERS INFORMATION TABLE**************/
+.limiter3{
+	width: 500px;
+	margin: 0 auto;
+	font-size: 25px;
+}
+
+.wrap3{
+	width: 1500px;
+	margin-left: -100px;
+}
+
+table {
+	width: 30%;
+}
+
+.column31{
+	width: 33%;
+	height: 70px;
+	padding-left: 40px;
+}
+
+.column32{
+	width: 20%;
+	text-align: center;
+}
+
+.table3-body td {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.table3.ver1 .table3-body tr:nth-child(even) {
+	background-image: linear-gradient(#84DEFF, #2DA3E4);
+}
+.table3.ver1 .table3-body tr:nth-child(odd) {
+	background-image: linear-gradient(#84DEFF, #2DA3E4);
+}
+/**************************************************/
+/*************THE USERS INFORMATION TABLE**************/
+.limiter4{
+	width: 500px;
+	margin: 0 auto;
+	font-size: 25px;
+}
+
+.wrap4{
+	width: 1500px;
+	margin-left: -100px;
+}
+
+table {
+	width: 30%;
+}
+
+.column41{
+	width: 33%;
+	height: 70px;
+	padding-left: 40px;
+}
+
+.column42{
+	width: 20%;
+	text-align: center;
+}
+
+.table4-body td {
+	padding-top: 16px;
+	padding-bottom: 16px;
+}
+
+.table4.ver1 .table4-body tr:nth-child(even) {
+	background-image: linear-gradient(#84DEFF, #2DA3E4);
+}
+.table4.ver1 .table4-body tr:nth-child(odd) {
+	background-image: linear-gradient(#84DEFF, #2DA3E4);
+}
+/**************************************************/
+
+
+#playerstats{
+	background-image: linear-gradient(#676565, #111111 );
+	color:white;
+	height:750px;
+}
+#everyonesStats{
+	height: 1700px;
+	background-image: linear-gradient(#7BFF9B, #2DE458);
+	display: flex;
+	flex-direction: column;
+}
+#myStatsTable{
+	margin-left: 500px;
+	margin-top:75px;
+}
+#gamertag{
+	margin-left: 725px;
+	font-size: 60px;
+}
+#killsDiv{
+	height: 500px;
+}
+#topOneDiv{
+	height: 500px;
+}
+#teammateStat{
+	margin-left: 0px;
+	width: 200px;
+	margin-top: 50px;
+}
+#kdDiv{
+	height: 500px;
+}
+#compairFriendTag{
+	width: 300px;
+	height: 40px;
+	font-size: 25px;
+}
+#compairbutton{
+	width:100px;
+	height:35px;
+	background-color: #2196F3;
+}
+#searchteammate{
+	margin-left: 400px;
+}
+
+/*		NEW CSS */
+#piechart1{
+	margin-top:-300px;
+	margin-left: 500px;
+	
+}
+#piechart2{
+	margin-top:-300px;
+	margin-left: 500px;
+	
+}
+#piechart3{
+	margin-top:-300px;
+	margin-left: 500px;
+}
+
+h1{
+	margin-left: 730px;
+}
+#comparemove{
+	margin-left: 170px;
+}

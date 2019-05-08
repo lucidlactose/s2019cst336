@@ -1,0 +1,96 @@
+html{
+     background-image: linear-gradient(#84DEFF, #2DA3E4);
+     /*height: 790px;*/
+}
+
+.player-box {
+    /*padding-top: 10px;*/
+    width: 100%;
+    height: 750px;
+    /*text-align: center;*/
+    /*display:flex;*/
+    /*justify-content:center;*/
+    /*border: 2px black solid;*/
+    /*background-image: linear-gradient(#84DEFF, #2DA3E4);*/
+}
+
+.player-specifics {
+    /*margin-top: 175px;*/
+    width: 100%;
+    padding: 25px;
+    margin: 0 auto;
+    /*margin-right: 25px;*/
+    /*margin-left: 25px;*/
+    height: 125px;
+    /*margin: 75px;*/
+    /*border: 2px black solid;*/
+    /*background-image: linear-gradient(#676565, #111111 );*/
+    background-image: linear-gradient(to right, #C70039, #ECD0D0);
+}
+
+#profile-pic {
+    display: inline;
+    /*margin-right: 2%;*/
+}
+
+#profile-name {
+    display: inline;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    /*background-image: linear-gradient(#676565, #111111 );*/
+}
+
+#follow-button {
+    margin-left: 10%;
+}
+
+#profile-id {
+    display: none;
+    
+}
+
+.stats {
+    display:inline-block;
+    /*margin: 3% 3% 0;*/
+    /*padding: 2%;*/
+    /*border: 2px black solid;*/
+    text-align: center;
+    font-size: 2rem;
+    background-image: linear-gradient(#676565, #111111 );
+}
+
+#follow-button,#unfollow-button,#refresh-button{
+    border: 1px transparent;
+    text-align: center;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: white;
+    /*background-image: linear-gradient(#676565, #111111 );*/
+}
+
+#follow-button:hover,#unfollow-button:hover,#refresh-button:hover{
+    background-color: grey;
+}
+
+#stat button{
+
+    border: 1px transparent;
+    text-align: center;
+    height: 40px;
+    font-size: 1.5rem;
+    background-color: #afa;
+}
+
+#stat button:hover {
+    background-color: grey;
+}
+
+.current-stat {
+    margin: 3% 3% 0;
+    padding: 5.5%;
+    color:white;
+    font-weight:bold;
+    font-size: 4rem;
+    border: 1px transparent;
+}
