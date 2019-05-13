@@ -25,7 +25,7 @@ function signOut() {
 /***********************  COPY SHOW HIDE  ******************************/
 /***********************************************************************/
 function copyInvitation() {
-    copyText = $("#myInput");
+    copyText = $("#invitation-link");
     console.log(copyText.val())
     copyText.select();
     document.execCommand("copy");
@@ -42,6 +42,29 @@ function showAddModal() {
 function showDeleteModal(item) {
     $("#delete-button").attr("value", item.id);
     $("#delete-appointment-modal").modal({backdrop: true});
+    
+    // date
+    held_values = $("#div" + item.id).html().split("-");
+    date = held_values[0];
+    $("#delete-start-date").html(date);
+    
+    hour = parseInt(held_values[1]);
+    str_hour = (hour > 12 ? (hour-12) + ":00" : hour + ":00");
+    str_hour = (str_hour == "0:00" ? "12:00": str_hour);
+    $("#delete-start-hour").html(str_hour)
+    
+    duration = parseInt(held_values[2]);
+    end_hour = (hour + duration/60);
+    str_end_hour = (end_hour > 12 ? (end_hour-12) + ":00" : end_hour + ":00");
+    str_end_hour = (str_end_hour == "0:00" ? "12:00": str_end_hour);
+    $("#delete-end-hour").html(str_end_hour)
+    // date_plus1 = (end_hour < hour ? true: false);
+    // end_date = (date_plus1 ? date: )
+    // for now, let's keep the date the same
+    $("#delete-end-date").html(date);
+    
+    
+    console.log(held_values)
 }
 /***********************************************************************/
 /********************* ON DOCUMENT READY  ******************************/
@@ -49,11 +72,12 @@ function showDeleteModal(item) {
 $(function() {
     getAppointments();
     
+    $("#invitation-link").val(window.location.href.toString())
     $("#show-appointment").on("click", showAddModal);
     $("#cancel-button").on("click", hideAddModal);
     $("#add-button").on("click", addAppointment);
     $("#delete-button").on("click", deleteAppointment);
-})
+});
 /***********************************************************************/
 /******************** DELETE ADD GET ***********************************/
 /***********************************************************************/
@@ -62,6 +86,7 @@ function cancelAppointment(item) {
 }
 function deleteAppointment() {
     id = $("#delete-button").val();
+    console.log(id)
     $.ajax({
         url: "api/deleteAppointment.php",
         type: "POST",
@@ -73,8 +98,8 @@ function deleteAppointment() {
             // console.log(data)
             hideDeleteModal();
             getAppointments();
-        }
-    })
+        },
+    });
 }
 function addAppointment() {
     start_time = $("#start-time").val()
@@ -104,7 +129,7 @@ function addAppointment() {
             hideAddModal();
             getAppointments();
         },
-    })
+    });
 }
 function getAppointments() {
     $("#appointment-times").find("tr:gt(0)").remove();
@@ -144,10 +169,13 @@ function getAppointments() {
                 isCancelButton = (key["booked_by"] === "Not Booked" ? "Delete" : "Cancel");
                 isCancelFunction = (key["booked_by"] === "Not Booked" ? "showDeleteModal(this)" : "cancelAppointment(this)");
                 
-                duration_hour = parseInt(parseInt(key["minute_duration"]) / 60);
-                duration_min = parseInt(key["minute_duration"]) % 60;
+                duration = parseInt(key["minute_duration"]);
+                duration_hour = parseInt(duration / 60);
+                duration_min = duration % 60;
                 duration_str = (duration_hour > 0 ? duration_hour + " hour " : "") +
                                 (duration_min != 0 ? duration_min + " min " : "");
+                                
+                value_str = date_str + "-" + hour + "-" + duration;
                 $("#appointment-times").append(
                     $("<tr id='time'>")
                         .append(
@@ -162,14 +190,16 @@ function getAppointments() {
                             $("<td>").append( 
                                 $("<button id=" + key["id"] + ">").html("Details")
                             ) .append(
-                                $("<button id="+key["id"]+" onclick="+isCancelFunction+">").html(isCancelButton)
+                                $("<button id=" + key["id"] + " onclick=" + isCancelFunction + ">").html(isCancelButton)
+                            ) .append(
+                                $("<div id= 'div" + key["id"] + "' style='display:none;'>").html(value_str)
                             )
                         )
                     )
-            })
+            });
             // console.log(data)
         },
-    })
+    });
 }
 /*********************************************************************/
 /**************     GOOGLE SIGN-IN BUTTON FORMATTING    **************/

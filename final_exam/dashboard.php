@@ -17,15 +17,13 @@
     </head>
     <body>
         <div class="container">
-            <div style="display:none;" id="hold-values"></div>
-    
             <div id="logout">
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
                 <a id="logout-button" href="#" onclick="signOut()" >logout</a>
             </div>
     
             <div id="invitation">
-                <input type="text" value="" id="myInput">
+                <input type="text" value="" id="invitation-link">
                 <button onclick="copyInvitation()"><img style="height:25px;" src="img/copy_icon.png"></button>
             </div>
     
@@ -86,8 +84,17 @@
                         </div>
                         <div class="modal-body">
                             <div>
-                                <table id="modal-input">
-                                    
+                                <table id="delete-table">
+                                    <tr>
+                                        <td> Start Time </td>
+                                        <td id="delete-start-date"></td>
+                                        <td id="delete-start-hour"></td>
+                                    </tr>
+                                    <tr>
+                                        <td> End Time </td>
+                                        <td id="delete-end-date"></td>
+                                        <td id="delete-end-hour"></td>
+                                    </tr>
                                 </table>
                                 <p> Are you sure you want to remove the time slot? 
                                     This cannot be undone. </p>
