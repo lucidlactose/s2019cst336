@@ -17,6 +17,7 @@
     </head>
     <body>
         <div class="container">
+            <div style="display:none;" id="hold-values"></div>
     
             <div id="logout">
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
@@ -74,6 +75,32 @@
                 </div>
             </div>
             
+            
+            <div class="modal fade" id="delete-appointment-modal" role="dialog">
+                <div class="modal-dialog">
+                  <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Add Time Slot</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <table id="modal-input">
+                                    
+                                </table>
+                                <p> Are you sure you want to remove the time slot? 
+                                    This cannot be undone. </p>
+                                <button id="cancel-button"> Cancel </button>
+                                <button id="delete-button"> Yes, Remove it! </button>
+                            </div>
+                        </div>
+                        <!--<div class="modal-footer">-->
+                        <!--    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 

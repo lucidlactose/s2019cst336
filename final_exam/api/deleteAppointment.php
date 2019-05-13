@@ -9,8 +9,6 @@ $sql = "DELETE FROM `appointment`
 $np = array();
 $np[":id"] = $_POST["id"];
 
-echo $_POST["id"];
-
 $stmt = $conn->prepare($sql);
 $stmt->execute($np);
 

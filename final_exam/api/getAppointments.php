@@ -5,7 +5,7 @@ $conn = getDatabaseConnection("appointments");
 
 $sql = "SELECT * 
         FROM `appointment` 
-        WHERE 1";
+        ORDER BY date, start_time";
 
 $stmt = $conn->prepare($sql);
 $stmt->execute();
